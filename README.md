@@ -1,7 +1,7 @@
 
 # LE SITE
 
-The project LE SITE is a web project creating by three student. The pupose of this website is to learn wile playing.
+The project LE SITE is a web project created by three student. The purpose of this website is to learn wile playing.
 
 ## Installation
 
