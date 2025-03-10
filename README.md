@@ -7,7 +7,7 @@ The project LE SITE is a web project created by three student. The purpose of th
 
 Clone the project
 ```bash
-  git clone https://github.com/arthur10o/Eureka.git
+  git clone https://github.com/arthur10o/LE-SITE.git
 ```
 
 Go to your project repository
