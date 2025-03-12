@@ -1,4 +1,3 @@
-test
 # THE WEBSITE
 
 The project The Website is a web project creating by three student. The pupose of this website is to learn wile playing.
