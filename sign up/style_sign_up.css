@@ -68,18 +68,18 @@ input {
 }
 
 #sign_up #container form input,
-#sign_up #container form button,
-#sign_up #container form label {
+#sign_up #container form label,
+#sign_up #container button {
     width: 100%;
 }
 
 #sign_up #container form input::placeholder,
-#sign_up #container form button::placeholder,
+#sign_up #container button::placeholder,
 #sign_up #container form label::placeholder {
     color: inherit;
 }
 
-#sign_up #container form button {
+#sign_up #container button {
     cursor: pointer;
     font-weight: bold;
 }
