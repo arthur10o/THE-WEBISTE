@@ -67,6 +67,11 @@ input {
     width: 100%;
 }
 
+#sign_up #container form #error_message {
+    text-align: center;
+    width: 100%;
+}
+
 #sign_up #container form input,
 #sign_up #container form label,
 #sign_up #container button {
@@ -86,4 +91,9 @@ input {
 
 form label {
     font-weight: bold;
+}
+
+select {
+    color: inherit;
+    background-color: inherit;
 }
