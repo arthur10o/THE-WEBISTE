@@ -87,6 +87,7 @@ input {
 #sign_up #container button {
     cursor: pointer;
     font-weight: bold;
+    color: inherit;
 }
 
 form label {
@@ -96,4 +97,8 @@ form label {
 select {
     color: inherit;
     background-color: inherit;
+}
+
+option {
+    color: black;
 }
