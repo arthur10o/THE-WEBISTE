@@ -30,6 +30,8 @@ Checking repository status
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Background color white mode | Undefined |
-| Background color black mode | Undefined |
+| Background color light mode | B8B8B8 |
+| Color light mode | 3C3C3C |
+| Background color dark mode | 3C3C3C |
+| Color dark mode | B8B8B8 |
 
