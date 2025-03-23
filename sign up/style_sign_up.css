@@ -16,6 +16,10 @@ ion-icon {
     margin-right: 5px;
 }
 
+#br_bis {
+    display: none;
+}
+
 input,
 button,
 a {
@@ -48,8 +52,6 @@ input {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    padding: 20px;
-    bottom: 20px;
 }
 
 #sign_up #container {
@@ -101,4 +103,66 @@ select {
 
 option {
     color: black;
+}
+
+@media (max-height: 950px) {
+    #sign_up {
+        padding: 100px;
+        bottom: 40px;
+    }
+}
+
+@media (max-height: 730.40px) {
+    #sign_up {
+        padding: 20px;
+        bottom: 20px;
+    }
+    
+}
+
+@media (max-height:586px) {
+    #sign_up {
+        width: auto;
+        height: 80vh;
+    }
+
+    #sign_up #container form input,
+    #sign_up #container form label,
+    #sign_up #container button,
+    #sign_up #container form #error_message {
+        width: 100%;
+    }
+
+    #sign_up #container form {
+        width: 50vw;
+    }
+
+    #sign_up #container form .br {
+        display: none;
+    }
+
+    #br_bis {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: medium;
+    }
+
+    #sign_up #container h1 {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 310px) {    
+    #navbar nav ul {
+        gap: 5vw;
+        flex-wrap: wrap;
+    }
+
+    #sign_up {
+        top: 15vh;
+    }
 }

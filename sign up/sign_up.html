@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <title>Sign Up</title>
         <link rel="stylesheet" href="style_sign_up.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <section id="navbar" class="contrast">
@@ -27,13 +28,13 @@
                 <form id = "sign_up_form" class="contrast">
                     <label form="mail"><ion-icon name="mail-outline"></ion-icon> Email :</label>
                     <input id="mail" type="email" placeholder="Email" required>
-                    <br><br>
+                    <br class="br"><br class="br">
                     <label form="nom_utilisateur"><ion-icon name="person-outline"></ion-icon> Username :</label>
                     <input id="username" type="text" placeholder="Username" required>
-                    <br><br>
+                    <br class="br"><br class="br">
                     <label form="age"><ion-icon name="accessibility-outline"></ion-icon> Age :</label>
                     <input id="age" type="date" placeholder="Age" required>
-                    <br><br>
+                    <br class="br"><br class="br">
                     <label form="sex"><ion-icon name="male-female-outline"></ion-icon> Gender :</label>
                     <select id="sex" type="text" placeholder="Gender" required>
                         <option id="select_a_gender">Select a gender</option>
@@ -41,13 +42,13 @@
                         <option id="femal">Woman</option>
                         <option id="other">Other</option>
                     </select>
-                    <br><br>
+                    <br class="br"><br class="br"><br id="br_bis">
                     <label form="password"><ion-icon name="lock-closed-outline"></ion-icon> Password :</label>
                     <input id="password" type="password" placeholder="Password" required>
-                    <br><br>
+                    <br class="br"><br class="br">
                     <label form="password_confirmation"><ion-icon name="lock-closed-outline"></ion-icon> Confirm your password :</label>
                     <input id="password_confirmation" type="password" placeholder="Confirm your password" required>
-                    <br><br>
+                    <br class="br"><br class="br">
                     <button id="submit" class="hover" type="submit">Submite</button>
                     <p id="error_message" style="color: red;"></p>
                 </form>
