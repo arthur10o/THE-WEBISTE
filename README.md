@@ -35,4 +35,4 @@ Checking repository status
 | Background color dark mode | #3C3C3C |
 | Color dark mode | #B8B8B8 |
 | Color hover light mode | #D1D1D1 |
-| Color hover dark mode | # 3C3C3C|
+| Color hover dark mode | # 2A2A2A|
