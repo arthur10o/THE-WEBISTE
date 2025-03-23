@@ -8,6 +8,8 @@
     list-style: none;
     font-size: large;
     box-sizing: border-box;
+    color: inherit;
+    background-color: inherit;
 }
 
 ion-icon {
@@ -17,8 +19,6 @@ ion-icon {
 input,
 button,
 a {
-    color: inherit;
-    background-color: inherit;
     border-color: transparent;
 
 }

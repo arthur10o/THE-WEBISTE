@@ -24,7 +24,7 @@
         <section id = "sign_up" class="contrast">
             <div id = "container">
                 <h1 id="h1_sign_up_form">Sign Up</h1>
-                <form id = "sign_up_form">
+                <form id = "sign_up_form" class="contrast">
                     <label form="mail"><ion-icon name="mail-outline"></ion-icon> Email :</label>
                     <input id="mail" type="email" placeholder="Email" required>
                     <br><br>
@@ -48,13 +48,14 @@
                     <label form="password_confirmation"><ion-icon name="lock-closed-outline"></ion-icon> Confirm your password :</label>
                     <input id="password_confirmation" type="password" placeholder="Confirm your password" required>
                     <br><br>
-                    <button id="submit" type="submit">Submite</button>
+                    <button id="submit" class="hover" type="submit">Submite</button>
                     <p id="error_message" style="color: red;"></p>
                 </form>
             </div>
         </section>
     </body>
     <script src="script_sign_up.js"></script>
+    <script src="../common script/script_light_dark_mode.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
