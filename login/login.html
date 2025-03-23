@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="style_login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="navbar" class="contrast">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index/index.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+                    </li>
+                    <li>
+                        <a href="../sign up/sign_up.html"><ion-icon name="people-outline"></ion-icon>Sign up</a>
+                    </li>
+                    <li>
+                        <button id="button_dark_light_mode" onclick="toggle_light_and_dark_mode()"></button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <br><br>
+        <section id = "login" class="contrast">
+            <div id = "container">
+                <h1 id="h1_login_form">Login</h1>
+                <form id = "login_form" class="contrast">
+                    <label form="nom_utilisateur"><ion-icon name="person-outline"></ion-icon> Username :</label>
+                    <input id="username" type="text" placeholder="Username" required>
+                    <br class="br"><br class="br">
+                    <label form="password"><ion-icon name="lock-closed-outline"></ion-icon> Password :</label>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <br class="br"><br class="br">
+                    <label form="password_confirmation"><ion-icon name="lock-closed-outline"></ion-icon> Confirm your password :</label>
+                    <input id="password_confirmation" type="password" placeholder="Confirm your password" required>
+                    <br class="br"><br class="br">
+                    <button id="submit" class="hover" type="submit">Submite</button>
+                    <p id="error_message" style="color: red;"></p>
+                </form>
+            </div>
+        </section>
+    </body>
+    <script src="script_login.js"></script>
+    <script src="../common script/script_light_dark_mode.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
