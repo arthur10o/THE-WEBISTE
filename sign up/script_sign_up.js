@@ -27,12 +27,27 @@ function set_mode(theme) {
 
 function toggle_light_and_dark_mode() {
     let last_state_light_dark_mode = localStorage.getItem("last_state_light_dark_mode");
+    let connection_state = localStorage.getItem("connection_state");
     if (last_state_light_dark_mode == "light") {
         set_mode("dark");
         localStorage.setItem("last_state_light_dark_mode", "dark");
+        if (connection_state == "true") {
+            let user_information = JSON.parse(localStorage.getItem("users_information"));
+            let user_connect = localStorage.getItem("username_connected");
+            let find_user_connected = user_information.find(user=>user.username == user_connect);
+            find_user_connected.light_dark_mode = "dark";
+            localStorage.setItem("users_information", JSON.stringify(user_information));
+        }
     } else if (last_state_light_dark_mode == "dark") {
         set_mode("light");
         localStorage.setItem("last_state_light_dark_mode", "light");
+        if (connection_state == "true") {
+            let user_information = JSON.parse(localStorage.getItem("users_information"));
+            let user_connect = localStorage.getItem("username_connected");
+            let find_user_connected = user_information.find(user=>user.username == user_connect);
+            find_user_connected.light_dark_mode = "light";
+            localStorage.setItem("users_information", JSON.stringify(user_information));
+        }
     }
 }
 
@@ -51,10 +66,21 @@ let contrast_element = document.getElementsByClassName("contrast");
 
 addEventListener("load", function() {
     let last_state_light_dark_mode = localStorage.getItem("last_state_light_dark_mode");
-    if (last_state_light_dark_mode == "dark") {
-        set_mode("dark");
+    let connection_state = localStorage.getItem("connection_state");
+
+    if (connection_state == "true") {
+        let users_information = JSON.parse(localStorage.getItem("users_information"));
+        let user_connected = localStorage.getItem("username_connected");
+        let find_user_connected = users_information.find(user=>user.username == user_connected);
+        let last_state_light_dark_mode_user_connecter = find_user_connected.light_dark_mode;
+        set_mode(last_state_light_dark_mode_user_connecter);
     } else {
-        set_mode("light");
+        if (last_state_light_dark_mode == "dark") {
+            set_mode("dark");
+        } else {
+            set_mode("light");
+            localStorage.setItem("last_state_light_dark_mode", "light");
+        }
     }
 });
 
@@ -66,6 +92,7 @@ document.getElementById("sign_up_form").addEventListener("submit", async functio
     let gender_enter = document.getElementById("sex").value;
     let password_enter = document.getElementById("password").value;
     let password_confirmation_enter = document.getElementById("password_confirmation").value;
+    let creation_date = Date();
     const valide_email_format = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
     if (password_confirmation_enter != password_enter) {
@@ -85,7 +112,8 @@ document.getElementById("sign_up_form").addEventListener("submit", async functio
             "username" : username_enter,
             "email" : email_hash,
             "password" : password_hash,
-            "last_state_light_dark_mode" : localStorage.getItem("last_state_light_dark_mode"),
+            "Date_of_creation" : creation_date,
+            "light_dark_mode" : localStorage.getItem("last_state_light_dark_mode"),
             "age" : age_enter,
             "gender" : gender_enter,
         }
@@ -94,7 +122,7 @@ document.getElementById("sign_up_form").addEventListener("submit", async functio
         list_users_information.push(user_information);
         localStorage.setItem("users_information", JSON.stringify(list_users_information));
         localStorage.setItem("connection_state", true);
-        localStorage.setItem("Username_connected", username_enter);
+        localStorage.setItem("username_connected", username_enter);
         window.location.href = "../index/index.html";
     }
 })
