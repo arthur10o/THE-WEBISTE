@@ -11,6 +11,7 @@ async function update_index_navbar() {
         logout.onclick = function() {
             localStorage.setItem("connection_state", false);
             localStorage.setItem("username_connected","");
+            localStorage.setItem('last_connection', "");
             location.reload();
         }
 

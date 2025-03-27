@@ -46,6 +46,7 @@ document.getElementById("sign_up_form").addEventListener("submit", async functio
         localStorage.setItem("users_information", JSON.stringify(list_users_information));
         localStorage.setItem("connection_state", true);
         localStorage.setItem("username_connected", username_enter);
+        localStorage.setItem("last_connection", creation_date);
         window.location.href = "../index/index.html";
     }
 })

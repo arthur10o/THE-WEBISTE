@@ -13,7 +13,6 @@ document.getElementById("login_form").addEventListener("submit", async function(
     let password_enter = document.getElementById("password").value;
     let password_confirmation_enter = document.getElementById("password_confirmation").value;
     let date_of_connection = Date();
-    const valide_email_format = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
     if (password_confirmation_enter != password_enter) {
         document.getElementById("error_message").textContent = "Your email or password is wrong !";
@@ -30,6 +29,7 @@ document.getElementById("login_form").addEventListener("submit", async function(
                 if (find_user_on_user_list.password == password_hash) {
                     localStorage.setItem("connection_state", true);
                     localStorage.setItem("username_connected", username_enter);
+                    localStorage.setItem("last_connection", date_of_connection);
                     window.location.href = "../index/index.html";
                 } else {
                     document.getElementById("error_message").textContent = "Your email or password is wrong !";
