@@ -8,6 +8,12 @@ async function update_index_navbar() {
         var settigs = document.createElement("a");
         var parent = document.getElementById("nav_ul");
 
+        logout.onclick = function() {
+            localStorage.setItem("connection_state", false);
+            localStorage.setItem("username_connected","");
+            location.reload();
+        }
+
         logout.innerHTML = '<ion-icon name="exit-outline"></ion-icon>Logout';
         settigs.innerHTML = '<ion-icon name="person-outline"></ion-icon>Settings';
 
