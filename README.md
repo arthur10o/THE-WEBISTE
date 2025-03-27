@@ -20,6 +20,7 @@ Checking repository status
 ```bash
     git status
 ```
+
 ## Authors
 
 - [@arthur10o (main repository)](https://github.com/arthur10o)
@@ -36,3 +37,11 @@ Checking repository status
 | Color dark mode | #B8B8B8 |
 | Color hover light mode | #D1D1D1 |
 | Color hover dark mode | # 2A2A2A|
+
+## License
+
+[MIT](https://github.com/arthur10o/THE-WEBISTE?tab=MIT-1-ov-file#readme)
+
+## Logo
+
+![Logo](https://github.com/arthur10o/THE-WEBISTE/blob/main/images/logo.png)
