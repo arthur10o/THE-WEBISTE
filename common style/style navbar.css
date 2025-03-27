@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: large;
+    box-sizing: border-box;
+    color: inherit;
+    background-color: inherit;
+}
+
+ion-icon {
+    margin-right: 5px;
+}
+
+input,
+button,
+a {
+    border-color: transparent;
+
+}
+
+input {
+    border-color: inherit;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    border-radius: 20px;
+    padding: 10px;
+    max-width:fit-content;
+}
+
+#navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 310px) {    
+    #navbar nav ul {
+        gap: 5vw;
+        flex-wrap: wrap;
+    }
+}
