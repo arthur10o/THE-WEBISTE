@@ -1,29 +1,24 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style_index.css">
-        <link rel="icon" href="#" type="image/png">                                                                                         <!--Favicon was not yet defined-->
-        <script src="scritpt_index.js"></script>
-        <title>THE WEBSITE</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="../common style/style navbar.css">
+    <title>THE WEBSITE</title>
+</head>
+
+<body>
+    <section id="navbar" class="contrast">
         <nav>
-            <ul>
+            <ul id="nav_ul">
                 <li>
-                    <a><ion-icon name="home-outline"></ion-icon>Home</a>
-                </li>
-                <li>
-                    <a href="../login/login.html"><ion-icon name="log-in-outline"></ion-icon>Login</a>
-                </li>
-                <li>
-                    <a href="../sign up/sign_up.html"><ion-icon name="people-outline"></ion-icon>Sign up</a>
-                </li>
-                <li>
-                    <button id="button_dark_light_mode"></button>
+                    <button id="button_dark_light_mode" onclick="toggle_light_and_dark_mode()"></button>
                 </li>
             </ul>
         </nav>
-    </body>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>                                    <!--For icon-->
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>                                             <!--For icon-->
+    </section>
+</body>
+<script src="../common script/script_light_dark_mode.js"></script>
+<script src="../common script/script_update_navbar.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
