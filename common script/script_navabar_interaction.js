@@ -1,8 +1,6 @@
 async function update_index_navbar() {
     const connection_state = localStorage.getItem("connection_state") || "false";
 
-    console.log(connection_state);
-
     if (connection_state == "true") {
         var logout = document.createElement("button");
         var settigs = document.createElement("a");
