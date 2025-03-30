@@ -38,6 +38,13 @@ Checking repository status
 | Color hover light mode | #D1D1D1 |
 | Color hover dark mode | # 2A2A2A|
 
+## Features
+
+- Light/dark mode toggle
+- Login mode
+- Sign up mode
+- Logout mode
+
 ## License
 
 [MIT](https://github.com/arthur10o/THE-WEBISTE?tab=MIT-1-ov-file#readme)
