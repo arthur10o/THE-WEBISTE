@@ -1,3 +1,10 @@
+input,
+button,
+a {
+    border-color: transparent;
+
+}
+
 #sign_up {
     border-radius: 20px;
     position: absolute;
