@@ -2,26 +2,36 @@ async function update_index_navbar() {
     const connection_state = localStorage.getItem("connection_state") || "false";
 
     if (connection_state == "true") {
-        var logout = document.createElement("button");
-        var settigs = document.createElement("a");
-        var parent = document.getElementById("nav_ul");
+        let page_name = document.title;
+        let logout = document.createElement("button");
+        let parent = document.getElementById("nav_ul");
 
+        if (page_name == "THE WEBISTE : Settings") {
+            let home = document.createElement("a");
+            
+            home.href = "../index/index.html";
+            home.innerHTML = '<ion-icon name="home-outline"></ion-icon>Home';
+            parent.appendChild(home);
+        } else if (page_name == "THE WEBSITE") {
+            let settigs = document.createElement("a");
+            
+            settigs.href = "../settings/settings.html";
+            settigs.innerHTML = '<ion-icon name="person-outline"></ion-icon>Settings';
+            parent.appendChild(settigs);
+        }
         logout.onclick = function() {
             localStorage.setItem("connection_state", false);
             localStorage.setItem("username_connected","");
             localStorage.setItem('last_connection', "");
             location.reload();
         }
-
         logout.innerHTML = '<ion-icon name="exit-outline"></ion-icon>Logout';
-        settigs.innerHTML = '<ion-icon name="person-outline"></ion-icon>Settings';
 
         parent.appendChild(logout);
-        parent.appendChild(settigs);
     } else if (connection_state == "false") {
-        var login = document.createElement('a');
-        var sign_up = document.createElement("a");
-        var parent = document.getElementById("nav_ul");
+        let login = document.createElement('a');
+        let sign_up = document.createElement("a");
+        let parent = document.getElementById("nav_ul");
 
         login.href = "../login/login.html";
         sign_up.href = "../sign up/sign_up.html";
