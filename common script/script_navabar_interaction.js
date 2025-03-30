@@ -19,12 +19,7 @@ async function update_index_navbar() {
             settigs.innerHTML = '<ion-icon name="person-outline"></ion-icon>Settings';
             parent.appendChild(settigs);
         }
-        logout.onclick = function() {
-            localStorage.setItem("connection_state", false);
-            localStorage.setItem("username_connected","");
-            localStorage.setItem('last_connection', "");
-            location.reload();
-        }
+        logout.setAttribute("onclick","logout()");
         logout.innerHTML = '<ion-icon name="exit-outline"></ion-icon>Logout';
 
         parent.appendChild(logout);
