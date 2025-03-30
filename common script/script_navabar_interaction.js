@@ -1,4 +1,4 @@
-async function update_index_navbar() {
+testasync function update_index_navbar() {
     const connection_state = localStorage.getItem("connection_state") || "false";
 
     if (connection_state == "true") {
