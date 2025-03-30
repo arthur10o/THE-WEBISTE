@@ -1,0 +1,16 @@
+section #Settings {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+section #Settings ul li {
+    padding-bottom: 1vh;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
