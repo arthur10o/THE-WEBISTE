@@ -25,7 +25,7 @@ We requiere all contributors to respect our [Code of Conduct](CODE_OF_CONDUCT.md
 
 ## Problem and Suggestion
 
-If you see a problem in the code and if you have a suggestion, please report it.
+If you see a problem in the code and if you have a suggestion, please report it. Don't hesitate to have a look at the [Security](SECURITY.md) file.
 
 ## Licence
 
