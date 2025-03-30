@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>THE WEBISTE : Settings</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../images/logo.png">
+        <link rel="stylesheet" href="../common style/style navbar.css">
+        <link rel="stylesheet" href="../common style/style_common.css">
+        <link rel="stylesheet" href="style_setttings.css">
+    </head>
+    <body>
+        <section id="navbar" class="contrast">
+            <nav>
+                <ul id="nav_ul">
+                    <li>
+                        <button id="button_dark_light_mode" onclick="toggle_light_and_dark_mode()"></button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="contrast">
+            <div id="Settings">
+                <ul>
+                    <li>
+                        <label form="username">Change my username :</label>
+                        <input type="text" form="username" placeholder="New username">
+                    </li>
+                    <li>
+                        <label form="password">Change my password :</label>
+                        <input type="password" form="password" placeholder="New password">
+                    </li>
+                    <li>
+                        <label form="password_confirmation">Confirm new password :</label>
+                        <input type="password" form="password_confirmation" placeholder="Confirm new password">
+                    </li>
+                    <li>
+                        <label for="email">Change my email :</label>
+                        <input type="email" form="email" placeholder="Change my email">
+                    </li>
+                    <li>
+                        <label for="lang">Change language :</label>
+                        <select>
+                            <option id="english">English</option>
+                            <option id="French">French</option>
+                            <option id="chinese">Chinese</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="photo">Profil picture :</label>
+                        <input type="file" accept="image/*">
+                    </li>
+                    <li>
+                        <label for="connection_history">Connection history :</label>
+                        <textarea name="connection history" rows="1" readonly></textarea>
+                    </li>
+                    <li>
+                        <button type="submit">Saves changes</button>
+                    </li>
+                    <li>
+                        <button type="reset">Reset last changes</button>
+                    </li>
+                    <li>
+                        <button type="submit" onclick="logout()">Logout</button>
+                    </li>
+                    <li>
+                        <button type="submit">Delete account</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </body>
+    <script src="script_settings.js"></script>
+    <script src="../common script/script_light_dark_mode.js"></script>
+    <script src="../common script/script_navabar_interaction.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
