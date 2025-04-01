@@ -39,6 +39,9 @@ document.getElementById("sign_up_form").addEventListener("submit", async functio
             "light_dark_mode" : localStorage.getItem("last_state_light_dark_mode"),
             "age" : age_enter,
             "gender" : gender_enter,
+            "connection_history" : [
+                                    creation_date
+                                    ]
         }
 
         let list_users_information = JSON.parse(localStorage.getItem("users_information")) || [];

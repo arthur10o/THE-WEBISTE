@@ -27,9 +27,11 @@ document.getElementById("login_form").addEventListener("submit", async function(
                 return;
             } else {
                 if (find_user_on_user_list.password == password_hash) {
+                    find_user_on_user_list.connection_history.unshift(date_of_connection);
                     localStorage.setItem("connection_state", true);
                     localStorage.setItem("username_connected", username_enter);
                     localStorage.setItem("last_connection", date_of_connection);
+                    localStorage.setItem("users_information", JSON.stringify(user_information));
                     window.location.href = "../index/index.html";
                 } else {
                     document.getElementById("error_message").textContent = "Your email or password is wrong !";
