@@ -12,7 +12,7 @@ document.getElementById("login_form").addEventListener("submit", async function(
     let username_enter = document.getElementById("username").value;
     let password_enter = document.getElementById("password").value;
     let password_confirmation_enter = document.getElementById("password_confirmation").value;
-    let date_of_connection = Date();
+    let date_of_connection = new Date().toDateString();
 
     if (password_confirmation_enter != password_enter) {
         document.getElementById("error_message").textContent = "Your email or password is wrong !";

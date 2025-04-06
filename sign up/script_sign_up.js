@@ -15,7 +15,7 @@ document.getElementById("sign_up_form").addEventListener("submit", async functio
     let gender_enter = document.getElementById("sex").value;
     let password_enter = document.getElementById("password").value;
     let password_confirmation_enter = document.getElementById("password_confirmation").value;
-    let creation_date = Date();
+    let creation_date = new Date().toDateString();
     const valide_email_format = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
     if (password_confirmation_enter != password_enter) {
