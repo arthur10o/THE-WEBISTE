@@ -15,7 +15,7 @@ document.getElementById("login_form").addEventListener("submit", async function(
     let date_of_connection = new Date().toDateString();
 
     if (password_confirmation_enter != password_enter) {
-        document.getElementById("error_message").textContent = "Your email or password is wrong !";
+        document.getElementById("error_message").textContent = "Your username or password is wrong !";
         return;
     } else {
         let password_hash = await hashString(password_enter);
@@ -23,7 +23,7 @@ document.getElementById("login_form").addEventListener("submit", async function(
         try {
             let find_user_on_user_list = user_information.find(user=>user.username == username_enter);
             if (find_user_on_user_list == null) {
-                document.getElementById("error_message").textContent = "Your email or password is wrong !";
+                document.getElementById("error_message").textContent = "Your username or password is wrong !";
                 return;
             } else {
                 if (find_user_on_user_list.password == password_hash) {
@@ -34,7 +34,7 @@ document.getElementById("login_form").addEventListener("submit", async function(
                     localStorage.setItem("users_information", JSON.stringify(user_information));
                     window.location.href = "../index/index.html";
                 } else {
-                    document.getElementById("error_message").textContent = "Your email or password is wrong !";
+                    document.getElementById("error_message").textContent = "Your username or password is wrong !";
                     return;
                 }
             }
