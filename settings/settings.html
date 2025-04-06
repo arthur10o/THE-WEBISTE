@@ -23,23 +23,23 @@
                 <ul>
                     <li>
                         <label form="username">Change my username :</label>
-                        <input type="text" form="username" placeholder="New username">
+                        <input type="text" form="username" id="username" placeholder="New username">
                     </li>
                     <li>
                         <label form="password">Change my password :</label>
-                        <input type="password" form="password" placeholder="New password">
+                        <input type="password" form="password" id="password" placeholder="New password">
                     </li>
                     <li>
                         <label form="password_confirmation">Confirm new password :</label>
-                        <input type="password" form="password_confirmation" placeholder="Confirm new password">
+                        <input type="password" form="password_confirmation" id="password_confirmation" placeholder="Confirm new password">
                     </li>
                     <li>
                         <label for="email">Change my email :</label>
-                        <input type="email" form="email" placeholder="Change my email">
+                        <input type="email" form="email" id="email" placeholder="Change my email">
                     </li>
                     <li>
                         <label for="lang">Change language :</label>
-                        <select>
+                        <select id="lang">
                             <option id="english">English</option>
                             <option id="French">French</option>
                             <option id="chinese">Chinese</option>
@@ -47,17 +47,17 @@
                     </li>
                     <li>
                         <label for="photo">Profil picture :</label>
-                        <input type="file" accept="image/*">
+                        <input type="file" id="photo" accept="image/*">
                     </li>
                     <li>
                         <label for="connection_history">Connection history :</label>
                         <a><span id="connection_history"></span></a>
                     </li>
                     <li>
-                        <button type="submit">Saves changes</button>
+                        <button type="submit" onclick="save_change()">Saves changes</button>
                     </li>
                     <li>
-                        <button type="reset">Reset last changes</button>
+                        <button type="reset" onclick="resert_changes()">Reset last changes</button>
                     </li>
                     <li>
                         <button type="submit" onclick="logout()">Logout</button>
