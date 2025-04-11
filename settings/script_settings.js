@@ -68,7 +68,12 @@ async function change_password() {
             if(find_user_on_user_list) {
                 find_user_on_user_list.password = password_hashed;
                 localStorage.setItem("users_information", JSON.stringify(user_information));
+            } else {
+                alert("An error has occured !");
+                return;
             }
+        } else {
+            document.getElementById("error_message").innerText = "Enter a valid password !";
         }
     }
 }

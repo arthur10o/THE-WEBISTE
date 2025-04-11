@@ -1,3 +1,8 @@
+#error_message {
+    text-align: center;
+    color: red;
+}
+
 section #Settings {
     position: absolute;
     left: 50%;
