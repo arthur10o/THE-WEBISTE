@@ -1,3 +1,12 @@
+async function hashString(input) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(input);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+}
+
 async function update_connection_history() {
     let connection_history_element = document.getElementById('connection_history');
     let user_information = JSON.parse(localStorage.getItem("users_information"));
@@ -47,11 +56,29 @@ async function change_username() {
     }
 }
 
+async function change_password() {
+    let password_element = document.getElementById("password").value;
+    let password_confirmation_element = document.getElementById("password_confirmation").value;
+    if ((password_element != "") && (password_confirmation_element != "")) {
+        if (password_confirmation_element == password_element) {
+            const password_hashed = await hashString(password_element);
+            let user_information = JSON.parse(localStorage.getItem("users_information"));
+            let user_connect = localStorage.getItem("username_connected");
+            let find_user_on_user_list = user_information.find(user=>user.username == user_connect);
+            if(find_user_on_user_list) {
+                find_user_on_user_list.password = password_hashed;
+                localStorage.setItem("users_information", JSON.stringify(user_information));
+            }
+        }
+    }
+}
+
 async function save_change() {
     if (await checkChanges()) {
         const confirmation = confirm("Do you want to confirm all the changes ?");
         if (confirmation) {
             await change_username();
+            await change_password();
             await resert_changes();
         } else if (!confirmation) {
             alert("Your changes have not been modified !");
