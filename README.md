@@ -47,7 +47,7 @@
 1. Clone the Git repository :
 
 ```bash
-    git clone https://github.com/arthur10o/THE-WEBISTE
+    git clone https://github.com/arthur10o/THE-WEBISTE.git
 ```
 2. Go to the project directory
 
