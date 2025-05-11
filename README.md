@@ -22,10 +22,10 @@
 1. [Description](#-description)
 2. [Features](#-features)
 3. [Run Locally](#-run-locally)
-4. [Color Reference](#-color-reference)
+4. [Color Reference](#color-reference)
 5. [Authors](#-authors)
-6. [License](#-license)
-7. [Logo](#-logo)
+6. [License](#license)
+7. [Logo](#logo)
 
 ## 📖 Description
 
