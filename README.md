@@ -22,10 +22,10 @@
 1. [Description](#-description)
 2. [Features](#-features)
 3. [Run Locally](#-run-locally)
-4. [Color Reference](#color-reference)
-5. [Authors](#-authors)
-6. [License](#license)
-7. [Logo](#logo)
+4. [Color Reference](#-color-reference)
+5. [Contributors](#-contributors)
+6. [License](#-license)
+7. [Logo](#%EF%B8%8F-logo)
 
 ## 📖 Description
 
@@ -34,10 +34,13 @@
 
 ## 🚀 Features
 
-- Light/dark mode toggle
-- Login mode
-- Sign up mode
-- Logout mode
+- Fully functional login system  
+- Account registration page  
+- Light/Dark mode toggle  
+- User settings page  
+- Connection history tracking (per user)  
+- Ability to change username  
+- Ability to update password 
 
 ## 📦 Run Locally
 
@@ -54,13 +57,13 @@
 
 3. Open ```index.html```
 
-## 👤 Authors
+## 👥 Contributors
 
-- [@arthur10o (main repository)](https://github.com/arthur10o)
+- [@arthur10o - *Project lead*](https://github.com/arthur10o)
 - [@Pablobmb](https://github.com/Pablobmb)
 - [@Antoine731](https://github.com/Antoine731)
 
-## Color Reference
+## 🎨 Color Reference
 
 | Color                        | Hex     |
 | -----------------------------| --------|
@@ -72,10 +75,10 @@
 | Color hover dark mode        | #2A2A2A |
 
 
-## License
+## 📄 License
 
 This project is licensed under [MIT](https://github.com/arthur10o/THE-WEBISTE?tab=MIT-1-ov-file#readme).
 
-## Logo
+## 🖼️ Logo
 
 ![Logo](https://github.com/arthur10o/THE-WEBISTE/blob/main/images/logo.png)
